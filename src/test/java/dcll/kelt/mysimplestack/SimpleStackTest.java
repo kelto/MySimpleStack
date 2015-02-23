@@ -21,8 +21,8 @@ public class SimpleStackTest extends TestCase {
     {
         SimpleStack<Integer> stack = new MySimpleStack<Integer>();
 
-        assertTrue("Stack should be empty", stack.isEmpty());
-        assertEquals("Stack should have 0 elements", 0, stack.getSize());
+        assertTrue("Stack should be empty.", stack.isEmpty());
+        assertEquals("Stack should have 0 elements.", 0, stack.getSize());
     }
 
     @Test
@@ -32,12 +32,12 @@ public class SimpleStackTest extends TestCase {
         Integer i = new Integer(10);
         stack.push(i);
 
-        assertFalse("stack should not be empty", stack.isEmpty());
-        assertEquals("stack should contains 1 element", 1, stack.getSize());
-        assertSame("the item should be on the top", i, stack.peek());
+        assertFalse("stack should not be empty.", stack.isEmpty());
+        assertEquals("stack should contains 1 element.", 1, stack.getSize());
+        assertSame("the item should be on the top.", i, stack.peek());
         Integer j = new Integer(3);
         stack.push(j);
-        assertSame("the item should be on the top", j, stack.peek());
+        assertSame("the item should be on the top.", j, stack.peek());
 
     }
 
